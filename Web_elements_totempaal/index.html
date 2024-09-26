@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Totempaal with Description</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Caveat:wght@400;600&family=Kalam:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu">
+      <div class="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="menu-items">
+        <ul>
+          <li>
+            <div class="menu-dropdown">
+              <a href="#" class="menu-link">Het project</a>
+              <div class="dropdown-content">
+                <p>
+                  Het begon allemaal met de vraag van De Boekentuin Alkmaar, een
+                  tweedehands online boekenwinkel: “Creatieveling gezocht voor
+                  het maken van een totempaal van oude boeken”. Vanaf dit
+                  beginpunt heeft het project zich ontwikkeld tot het geheel dat
+                  je hier voor je ziet. Ik heb dit niet in mijn eentje gedaan;
+                  veel van mijn vrienden en familie hebben meegedacht en
+                  meegeholpen. Ik heb ontzettend veel plezier gehad in het
+                  ontwerpen, uitdenken en bouwen van dit project. Ik wil graag
+                  ter afsluiting mijn vrienden en familie bedanken voor hun hulp
+                  aan mijn totempaal. Zonder hen zou het niet zo’n leuk project
+                  of zo’n mooi eindresultaat geweest zijn! <br /><br />Dus
+                  hartelijk bedankt: Bodi, Dana, Ireen, Jeffrey, Mike (website),
+                  Neeltje, Nico, Paula, Sander, Sandra, Silvana, Silvia, Trudy
+                  en Yaëlle!
+                  <br />
+                  <br />
+                  Hartelijke groeten en wie weet tot ziens! <br />Noor van den
+                  Berg
+                </p>
+                <p></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="menu-dropdown">
+              <a href="#" class="menu-link">De Totempaal</a>
+              <div class="dropdown-content">
+                <p>
+                  Deze totempaal is geheel gemaakt van papier, wat mijn
+                  favoriete materiaal is om mee te werken. Het bestaat uit
+                  karton voor de stevigheid, boekpagina’s als bekleding en
+                  boekruggen ter decoratie. Het laat de geschiedenis van de
+                  boekdrukkunst ziet, in vijf elementen.
+                  <br /><br />Op de totempaal vind je tussen de elementen
+                  allemaal collages van boekruggen. Kijk eens goed naar alle
+                  boektitels die je er tegenkomt, waarschijnlijk zit er wel iets
+                  bij dat jij zelf ook gelezen hebt 😊
+                </p>
+                <p></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="menu-dropdown">
+              <a href="#" class="menu-link">Contact</a>
+              <div class="dropdown-content">
+                <p>
+                  Heb je een vraag over het project of wil je graag vertellen
+                  wat je van de totempaal vindt, stuur mij gerust een berichtje.
+                </p>
+                <div class="contact-form-container">
+                  <form
+                    id="contactForm"
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                    onsubmit="handleSubmit(event)"
+                  >
+                    <input
+                      type="hidden"
+                      name="access_key"
+                      value="c04f9c1f-8660-41c2-9fe3-0c984214fb26"
+                    />
+                    <input
+                      type="hidden"
+                      name="to"
+                      value="noor_all@hotmail.com"
+                    />
+                    <input
+                      type="hidden"
+                      name="from_name"
+                      value="Totempaal Website"
+                    />
+                    <input
+                      type="checkbox"
+                      name="botcheck"
+                      class="hidden"
+                      style="display: none"
+                    />
+
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        placeholder="Jouw naam"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="E-mailadres"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        required
+                        placeholder="Onderwerp"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <textarea
+                        id="message"
+                        name="message"
+                        required
+                        placeholder="Bericht"
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Stuur</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="background-overlay"></div>
+
+    <div class="static-text-container">
+      <h1>Totempaal</h1>
+      <p>Geschiedenis van de boekdrukkunst</p>
+    </div>
+
+    <div class="main-content">
+      <div class="cube-text-container">
+        <!-- Cube 5 and Text -->
+        <div class="cube-text-pair">
+          <div class="text-section">
+            <div class="text-content">
+              We eindigen met een kroon op de totempaal: een 3D-origami vaas van
+              ruim 700 stukjes van boekpagina’s. Dit vijfde element is in een
+              cirkelvorm. In de vaas staan drie ‘bloemen’ die de drie
+              belangrijkste redenen laten zien waarom we lezen. Dat is omdat we
+              kennis willen, ons willen ontspannen of naar een andere wereld
+              willen gaan. De vaas is omringd door een cirkel van bijzondere
+              boekkaften, met goud of zilver verwerkt op de rug en op de
+              voorkant. Al deze boeken hebben iets gemeen: het zijn allemaal
+              ‘boek-van-de-maand’ boeken van de Nederlandse Boekenclub, voor
+              sommigen van ons ook wel bekend als de ECI.
+            </div>
+          </div>
+          <div class="image-cube cube-1">
+            <div class="cube-face cube-front">
+              <img
+                src="pictures/Adjusted/cube_5/top_1.jpg"
+                alt="Cube 1 Front"
+                class="cube-image"
+              />
+            </div>
+            <div class="cube-face cube-back">
+              <img
+                src="pictures/Adjusted/cube_5/top_2.jpg"
+                alt="Cube 1 Back"
+                class="cube-image"
+              />
+            </div>
+            <div class="cube-face cube-left">
+              <img
+                src="pictures/Adjusted/cube_5/top_3.jpg"
+                alt="Cube 1 Left"
+                class="cube-image"
+              />
+            </div>
+            <div class="cube-face cube-right">
+              <img
+                src="pictures/Adjusted/cube_5/top_4.jpg"
+                alt="Cube 1 Right"
+                class="cube-image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Cube 4 and Text -->
+        <div class="cube-text-pair">
+          <div class="text-section">
+            <div class="text-content">
+              De boekdrukpers zorgde voor een revolutie in de productie van
+              boeken. Meerdere persen werden ontwikkeld, tot de dag dat de
+              computer kwam met het digitale woord. Vanaf toen konden verhalen
+              ook digitaal geschreven en gelezen worden. Dat is ons vierde
+              element, in de vorm van een driehoek. Veelgebruikte manieren om
+              digitaal te lezen zijn vanaf je laptop, via je mobiel of op je
+              e-reader. Deze drie apparaten vind je terug in de driehoek. En wat
+              de volgende stap zal zijn in de geschiedenis van de boekdrukkunst…
+              wie zal het zeggen?
+            </div>
+          </div>
+          <div class="image-cube cube-2">
+            <div class="cube-face cube-front">
+              <img
+                src="pictures/Adjusted/cube_4/digitaal_1.jpg"
+                alt="Cube 2 Front"
+                class="cube-image"
+              />
+            </div>
+            <div class="cube-face cube-back">
+              <img
+                src="pictures/Adjusted/cube_4/digitaal_2.jpg"
+                alt="Cube 2 Back"
+                class="cube-image"
+              />
+            </div>
+            <div class="cube-face cube-left">
+              <img
+                src="pictures/Adjusted/cube_4/digitaal_3.jpg"
+                alt="Cube 2 Left"
+                class="cube-image"
+              />
+            </div>
+            <div class="cube-face cube-right">
+              <img
+                src="pictures/Adjusted/cube_4/digitaal_4.jpg"
+                alt="Cube 2 Right"
+                class="cube-image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Cube 3 and Text -->
+        <div class="cube-text-pair">
+          <div class="text-section">
+            <div class="text-content">
+              Met het derde element maken we de volgende sprong in de tijd: de
+              uitvinding van de boekdrukpers in Europa in de vijftiende eeuw. In
+              het vijfkant, geplaatst op een boek, staat een nagebouwde versie
+              van de Gutenberg-drukpers, vernoemd naar de ontwerper ervan.
+              Tussen de twee houten palen zit een dwarsbalk waarin een schroef
+              zit. Die schroef kan met de grijze hendel naar beneden worden
+              gebracht, waardoor er een papier gedrukt wordt op de letterbak,
+              die eronder al klaar staat op de tafel. En voilà, het vel is
+              bedrukt met vier pagina’s!
+            </div>
+          </div>
+          <div class="image-cube cube-3">
+            <div class="cube-face cube-front">
+              <img
+                src="pictures/Adjusted/cube_3/boekdruk_1.jpg"
+                alt="Cube 3 Front"
+                class="cube-image"
+              />
+            </div>
+            <div class="cube-face cube-back">
+              <img
+                src="pictures/Adjusted/cube_3/boekdruk_2.jpg"
+                alt="Cube 3 Back"
+                class="cube-image"
+              />
+            </div>
+            <div class="cube-face cube-left">
+              <img
+                src="pictures/Adjusted/cube_3/boekdruk_3.jpeg"
+                alt="Cube 3 Left"
+                class="cube-image"
+              />
+            </div>
+            <div class="cube-face cube-right">
+              <img
+                src="pictures/Adjusted/cube_3/boekdruk_4.jpg"
+                alt="Cube 3 Right"
+                class="cube-image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Cube 2 and Text -->
+        <div class="cube-text-pair">
+          <div class="text-section">
+            <div class="text-content">
+              Het tweede element laat het kopiëren zien van boeken door
+              monniken, van de vroege middeleeuwen tot de vijftiende eeuw. Het
+              overschrijven van een boek was een hele klus, dat weken tot
+              maanden kon duren. Daar komt ook onze uitdrukking vandaan dat iets
+              ‘monnikenwerk’ wordt genoemd. In deze rechthoek nemen we een
+              kijkje in een klooster waar twee broeders aan het werk zijn als
+              kopiisten. Let op de details in deze kijkdoos, er valt van alles
+              te zien. De boekpagina’s die hier gebruikt zijn als de bekleding,
+              komen uit een woordenboek.
+            </div>
+          </div>
+          <div class="image-cube cube-4">
+            <div class="cube-face cube-front">
+              <img
+                src="pictures/Adjusted/cube_2/1-b.jpg"
+                alt="Cube 4 Front"
+                class="cube-image"
+              />
+            </div>
+            <div class="cube-face cube-back">
+              <img
+                src="pictures/Adjusted/cube_2/center_image_2.jpg"
+                alt="Cube 4 Back"
+                class="cube-image"
+              />
+            </div>
+            <div class="cube-face cube-left">
+              <img
+                src="pictures/Adjusted/cube_2/monniken_1.jpg"
+                alt="Cube 4 Left"
+                class="cube-image"
+              />
+            </div>
+            <div class="cube-face cube-right">
+              <img
+                src="pictures/Adjusted/cube_2/monnike_2.jpg"
+                alt="Cube 4 Right"
+                class="cube-image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Cube 1 and Text -->
+        <div class="cube-text-pair">
+          <div class="text-section">
+            <div class="text-content">
+              De geschiedenis begint onderaan de totempaal. In het zeskantige
+              element zien we dat geschreven verhalen al eeuwenoud zijn. Op de
+              voorzijde zie je het Scandinavische runenschrift, dat ergens
+              tussen 50 en 500 na Christus werd ontwikkeld. Links ervan zie je
+              Egyptische hiërogliefen, die 3500 jaar lang gebruikt zijn als
+              schrijfwijze. Rechts ervan zie je een voorbeeld van de oudst
+              geschreven taal ter wereld: het Soemerisch pictogrammenschrift
+              (vanaf 3500 voor Christus). Alle voorbeelden zijn ingelijst met
+              een witte uitstekende omlijsting of een zwarte toelopende lijst,
+              versierd met stukjes boekpagina.
+            </div>
+          </div>
+          <div class="image-cube cube-5">
+            <div class="cube-face cube-front">
+              <img
+                src="pictures/Adjusted/cube_1/1-a.jpg"
+                alt="Cube 5 Front"
+                class="cube-image"
+              />
+            </div>
+            <div class="cube-face cube-back">
+              <img
+                src="pictures/Adjusted/cube_1/geschriften_egypte.jpg"
+                alt="Cube 5 Back"
+                class="cube-image"
+              />
+            </div>
+            <div class="cube-face cube-left">
+              <img
+                src="pictures/Adjusted/cube_1/Uitvergroting.jpg"
+                alt="Cube 5 Left"
+                class="cube-image"
+              />
+            </div>
+            <div class="cube-face cube-right">
+              <img
+                src="pictures/Adjusted/cube_1/geschriften2.jpg"
+                alt="Cube 4 Right"
+                class="cube-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <a href="#" class="footer-link">Website byMike</a>
+      </div>
+    </footer>
+    <!-- MODAL -->
+    <div id="successModal" class="modal" style="display: none">
+      <div class="modal-content">
+        <h2>Bedankt voor je bericht!</h2>
+        <p>
+          Je bericht is succesvol verzonden. Ik neem zo snel mogelijk contact
+          met je op.
+        </p>
+        <button onclick="closeModal()" class="modal-close">Sluiten</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
